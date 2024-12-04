@@ -6,37 +6,78 @@
     <title>Document</title>
 </head>
 <body>
-
     <style>
         #container{
             display: grid;
-            grid-template-columns: 200px 200px 200px;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            height: 400px;
+            width: 300px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;        
+            margin: 80px 100px 100px 300px;
+            padding: 30px;
         }
-        img{
-            width:100%;
+        .btn{
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 20px 0px 20px 0px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;            
+            border-radius: 10px;
         }
-        div{
-            text-align: center;
+        .space{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .pls{
+            background-color: black;
+            color: white;
+        }
+        .mns{
+            background-color: black;
+            color: white;
+        }
+        .mtp{
+            background-color: black;
+            color: white;
+        }
+        .cal{
+            background-color:red;
+            color: white;
+            height: 30px;
+        }
+        .zr{
+            height: 30px;
+        }
+        .eql{
+            background-color: black;
+            color: white;
+            height: 30px;
+        }
+        .dvs{
+            background-color: black;
+            color: white;
+            height: 30px;
         }
     </style>
     <div id="container">
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6f4khqtqO8sI6bOa2S0e3V_KZsloSr3tFiA&s" alt="">
-        <h1>coding</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor aspernatur dicta porro id dolorum et dolores sint quaerat, rem totam necessitatibus, non ex optio molestias blanditiis dignissimos deserunt repellendus.</p>
-    </div>
-
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6f4khqtqO8sI6bOa2S0e3V_KZsloSr3tFiA&s" alt="">
-        <h1>coding</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor aspernatur dicta porro id dolorum et dolores sint quaerat, rem totam necessitatibus, non ex optio molestias blanditiis dignissimos deserunt repellendus.</p>
-    </div>
-
-    <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6f4khqtqO8sI6bOa2S0e3V_KZsloSr3tFiA&s" alt="">
-        <h1>coding</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi dolor aspernatur dicta porro id dolorum et dolores sint quaerat, rem totam necessitatibus, non ex optio molestias blanditiis dignissimos deserunt repellendus.</p>
-    </div>
+        <button class="btn space"></button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn pls">+</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn mns">-</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn mtp">X</button>
+        <button class="btn cal">C</button>
+        <button class="btn zr">0</button>
+        <button class="btn eql">=</button>
+        <button class="btn dvs">/</button>
     </div>
 </body>
 </html>
