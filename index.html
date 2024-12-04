@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            height: 400px;
+            width: 300px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;        
+            margin: 80px 100px 100px 300px;
+            padding: 30px;
+        }
+        .btn{
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 20px 0px 20px 0px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;            
+            border-radius: 10px;
+        }
+        .space{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .pls{
+            background-color: black;
+            color: white;
+        }
+        .mns{
+            background-color: black;
+            color: white;
+        }
+        .mtp{
+            background-color: black;
+            color: white;
+        }
+        .cal{
+            background-color:red;
+            color: white;
+            height: 30px;
+        }
+        .zr{
+            height: 30px;
+        }
+        .eql{
+            background-color: black;
+            color: white;
+            height: 30px;
+        }
+        .dvs{
+            background-color: black;
+            color: white;
+            height: 30px;
+        }
+    </style>
+    <div id="container">
+        <button class="btn space"></button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn pls">+</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn mns">-</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn mtp">X</button>
+        <button class="btn cal">C</button>
+        <button class="btn zr">0</button>
+        <button class="btn eql">=</button>
+        <button class="btn dvs">/</button>
+    </div>
+</body>
+</html>
