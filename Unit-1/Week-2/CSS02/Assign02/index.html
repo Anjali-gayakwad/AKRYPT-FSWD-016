@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        #container{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+            margin-top: 30px;
+        }
+        div{
+
+        }
+        .nav{
+            background-color: yellow;
+            color: black;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 80px;
+        }
+        
+        .box1{
+            background-color: red;
+            color: black;
+            height: 300px;
+        
+        }
+        .box2{
+            display: grid;
+            grid-template-rows: 3,1fr;
+            gap: 10px;
+
+        }
+        .rb1{
+            background-color: green;
+            color: black;
+        }
+        .rb2{
+            background-color: green;
+            color: black;
+        }
+        .rb3{
+            background-color: green;
+            color: black;
+        }
+     
+    </style>
+    <div id="container">
+        <div class="nav">Navigation</div>
+        <div class="box1">
+          LEFTBOX
+        </div>
+        <div class="box2">
+        <div class="rb1">RIGHT BOX1</div>
+        <div class="rb2">RIGHT BOX2</div>
+        <div class="rb3">RIGHT BOX3</div>
+        </div>
+    </div>
+</body>
+</html>
