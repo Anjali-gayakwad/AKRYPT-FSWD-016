@@ -4,80 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/caaf1926e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <style>
-        #container{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 10px;
-            height: 400px;
-            width: 300px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;        
-            margin: 80px 100px 100px 300px;
-            padding: 30px;
-        }
-        .btn{
+        nav{
+            height: 60px;
             background-color: white;
+        }
+        .logo{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 34px;
+        }
+        
+        .nav{
+            text-decoration: none;
+            margin: 15px;
             color: black;
+        }
+        #c1{
+            width: 100%;
+        }
+        .img1{
+            width: 100%;
+            height: 600px;
+        }
+        .c2{
+            display: flex;
+            gap: 10px;
+        }
+        .b1{
+            width: 300px;
+            height: 380px;
+        }
+        .img2{
+            width: 300px;
+            height: 380px;
+        }
+        h1{
+            margin-left: 50px;
+        }
+        .c3{
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+        }
+        .b2{
+            width: 500px;
+            height: 350px;
+            text-align: center;            
+        }
+        .img3{
+            width: 500px;
+            height: 300px;
+        }
+        .b3{
+            text-align: left;
+        }
+        .c4{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .b4{
+            width: 370px;
+            height: 500px;
+            text-align: center;
+        }
+        .img5{
+            width: 370px;
+            height:400px;
+        }
+        .c5{
+            display: flex;
+            gap:20px;
+            justify-content: center;
+        }
+        .b5{
+            width: 540px;
+            height: 500px;
+        }
+        .img6{
+            width: 540px;
+            height: 300px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+        .c6{
+            width: 100%;
+            height: 200px;
+        }
+        .n2{
+            margin;none;
+        }
+        i{
+            float: right;
+            margin-right: 20px;
+            font-size: xx-large;
+        }
+        h2{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        footer{
+            position: fixed;
+            display: flex;
+            gap:50px;
+            width: 100%;
+            bottom: 0;
+            justify-content: center;
+            background-color: rgba(62, 55, 55, 0.61);
+            margin-top: 300px;
+            
+        }
+        #ftr{
+        }
+        p{
+            width: 600px;
+            font-size:larger;
+        }
+        .hr{
+            text-decoration: none;
+            color: none;
+        }
+        button{
+            height: 40px;
+            width: 150px;
             border: none;
-            padding: 20px 0px 20px 0px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;            
-            border-radius: 10px;
-        }
-        .space{
-            grid-column-start: 1;
-            grid-column-end: 5;
-        }
-        .pls{
-            background-color: black;
+            border-radius: 50px;
+            margin-top: 20px;
+            background-color: blue;
             color: white;
-        }
-        .mns{
-            background-color: black;
-            color: white;
-        }
-        .mtp{
-            background-color: black;
-            color: white;
-        }
-        .cal{
-            background-color:red;
-            color: white;
-            height: 30px;
-        }
-        .zr{
-            height: 30px;
-        }
-        .eql{
-            background-color: black;
-            color: white;
-            height: 30px;
-        }
-        .dvs{
-            background-color: black;
-            color: white;
-            height: 30px;
-        }
+        }    
     </style>
-    <div id="container">
-        <button class="btn space"></button>
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn pls">+</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn mns">-</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn mtp">X</button>
-        <button class="btn cal">C</button>
-        <button class="btn zr">0</button>
-        <button class="btn eql">=</button>
-        <button class="btn dvs">/</button>
-    </div>
+    <nav>
+        <a class="nav logo" href="logo">Disney</a>
+        <a class="nav" href="PARKS">PARKS</a>
+        <a class="nav" href="CRUISE">CRUISE</a>
+        <a class="nav" href="WHAT'S NEW">WHAT'S NEW</a>
+    </nav>
+        <div id="container c1">
+            <img class="img img1" src="https://lumiere-a.akamaihd.net/v1/images/dcl_desktop_in_unlimited_d3aa26fd.jpeg" alt="">
+        </div>
+        <br>
+        <div class="container c2">
+            <div class="box b1">
+                <img class="img img2"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdp_2zgkxfWf7My5FhdzFRLTc4azm-QWpwEQ&s" alt="">
+            </div>
+            <div class="box b1">
+                <img class="img img2" src="https://lumiere-a.akamaihd.net/v1/images/500_x_575_avengers_2cbe88b8.jpeg?region=0,0,575,500" alt="">
+            </div>
+            <div class="box b1">
+                <img class="img img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbgPKsySBZpVmQxI7-ofiaSMYuAT6_naYIQ&s" alt="">
+            </div>
+            <div class="box b1">
+                <img class="img img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRWKXOWhoMqUGegXAzC6anwlD1xBQJCD1sA&s" alt="">
+            </div>
+        </div>
+        <br>
+            <h1>Featured Ads</h1>
+        <div class="container c3">
+            <div class="box b2">
+               <img class="img img3" src="https://lumiere-a.akamaihd.net/v1/images/900x540_dit_2bbf385b.jpeg?region=0,0,960,540" alt="">
+               <h3>Disney Imagine That | Disney Channe</h3>
+            </div>
+            <div class="box b3">
+               <iframe class="img img4" width="560" height="315" src="https://www.youtube.com/embed/AuBU_USefoI?si=rj4u7lW98c8WYFBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <h1>Marvel's Spider-Man </h1>
+               <p> When new foes threaten the city, a new web slinger arises as Spider Man.</p>
+               <p>Marvel's Spider-Man: Miles Morales has arrived on PlayStation 4 and PlayStation 5. Get the game now:
+                <a class="hr"href="http://amzn.to/35buWpS">http://amzn.to/35buWpS</a>#BeGreate #BeYourself #MilesMorales</p> 
+            </div>
+        </div>
+        <h1>Explore Disney Holidays</h1>
+        <div class="container c4">
+            <div class="box b4">
+                <img class="img img5" src="https://lumiere-a.akamaihd.net/v1/images/eu_dis-prs_season-of-the-force_poh_r_3aad400f.jpeg?region=0,0,600,690" alt="">
+                <h3>Legend of the Force</h3>
+                <h5>DISCOVER NOW AT DISNEYLAND@PARIS </h5>
+            </div>
+            <div class="box b4">
+                <img class="img img5" src="https://lumiere-a.akamaihd.net/v1/images/eu_parks_q2-update_po_v8_r_8570fddb.jpeg?region=0,0,600,690" alt="">
+                <h3>14 Day Ticket at a 7 Day Price</h3>
+                <h5>BOOK WITH WALT DISNEY WORLD</h5>
+            </div>
+            <div class="box b4">
+                <img class="img img5" src="https://lumiere-a.akamaihd.net/v1/images/eu_dcr_always_on_sq_po_v3_r_1b065c85.jpeg?region=0,0,500,575" alt="">
+                <h3>Find Your Perfect Holiday</h3>
+                <h5>BOOK WITH DISNEY CRUISE LINE</h5>
+            </div>
+        </div>
+        <h1>More From Disney</h1>
+        <div class="container c5">
+            <div class="box b5">
+                <img class="img img6" src="https://lumiere-a.akamaihd.net/v1/images/mobile---800x600_0525b803.png?region=0,0,800,600&width=768" alt="">
+                <h3>Disney Junior Birthday Book</h4>
+                <P>Make your kids birthday even more special by creating your own personalized birthday vedio for you child</P>
+                <h5>DISNEY JUNIOR</h5>
+            </div>
+            <div>
+                <img class="img img6" src="https://lumiere-a.akamaihd.net/v1/images/eu_mickey90_promo2_c169_r_b0eb57bc.jpeg?region=0,0,1095,617&width=960" alt="">
+                <h3>Happy Anniversary Mickey</h3>
+                <p>It all Started with a mouse.We're celebrating 90 years of the true original.</p>
+                <h5>DISNEY</h5>
+            </div>
+        </div>
+        <div class="container c6">
+            <a class="nav logo" href="logo">Disney</a>
+            <a class="nav n2" href="PARKS">PARKS</a>
+            <a class="nav n2" href="CRUISE">CRUISE</a>
+            <a class="nav n2" href="WHAT'S NEW">WHAT'S NEW</a>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <h2><b>Disney</b></h2>
+        </div>
+        
+    <footer id="ftr">
+            <h3>About Cookies</h3>
+            <p>We use cookies to help make this website better, to improve our services and for advertising purposes. You can learn more about our use of cookies and change your browser settings in order to avoid cookies by clicking 
+                <a class="hr" href="">here.</a>
+                 Otherwise, we’ll assume you are OK to continue.</p>
+            <button>CONTINUE</button>
+        </footer>
 </body>
 </html>
