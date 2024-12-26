@@ -4,389 +4,413 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/caaf1926e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <style>
-        nav{
-            /* padding: 30px; */
-            display: flex;
-            justify-content: space-between;
-            font-size: 18px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-        #left{
-            padding: 25px 20px;
-            font-size: 35px;
-            color:green;
-        }
-        .right{
-            display: flex;
-            gap:20px;
-        }
-        .leftdiv{
-            display: flex;
-            gap: 10px;
-            padding: 25px 0px;
-        }
-        .rightdiv{
-            display: flex;
-            gap:10px;
-            background-color: green;
-            color:white;
-            padding: 25px 30px 0px 30px;
-        }
-
-        #cont1{
-            height: 700px;
-            background-image: url(https://themewagon.github.io/solartec/img/carousel-2.jpg);
-            display: flex;
-            gap: 150px;
-        }
-        .div1{
-            width: 700px;
-            padding:150px ;
-            color: white;
-        }
-        .btn1{
-            width: 200px;
-            height: 60px;
-            border-radius: 30px;
-            border:none;
-            background-color: green;
-            color:white;
-        }
-        .div2{
-            padding-top:250px ;
-        }
-        .circle1{
-            width: 50px;
-            height: 50px;
-            border-radius: 30px;
-            background-image: url(https://themewagon.github.io/solartec/img/carousel-1.jpg);
-            background-size: cover;
-            border: 2px solid white;
-        }
-        .circle2{
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-            background-image: url(https://themewagon.github.io/solartec/img/carousel-1.jpg);
-            background-size: cover;
-            border: 2px solid white;
-        }
-        #cont2{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 100px;
-        }
-        .first{
-            width: 400px;  
-            margin-top: 50px; 
-            padding-left: 50px;
-        }
-        .text{
-            display: flex;
-        }
-        .icon{
-            width: 60px;
-            height: 60px;
-            border-radius: 30px;
-            background-color: green;
-            color:white;
-            margin-top: 20px;
-        }
-        #cont3{
-            display: flex;
-            gap: 50px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            margin-bottom: 100px;
-        }
-        .img{
-            width: 600px;
-            height: 700px;
-            background-image: url(https://themewagon.github.io/solartec/img/about.jpg);
-            background-size: cover;
-        }
-        .text1{
-            width: 600px;
-            height: 700px;
-        }
-        .circle3{
-            display: flex;
-            gap: 10px;
-        }
-        .correct{
-            width: 20px;
-            height: 20px;
-            border-radius: 10px;
-            background-color: green;
-            margin-top: 20px;
-        }
-        #cont4{
-            padding: 30px;
-        }
-        .text2{
-            width: 600px;
-            text-align: center;
-            padding: 10px 0px 0px 350px;
-            margin-bottom:50px;
-        }
-        .table{
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 20px;
-        }
-        .grid1{
-            width: 350px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-        .img1{
-            width: 350px;
-            height: 230px;
-            background-image: url(https://themewagon.github.io/solartec/img/img-600x400-1.jpg);
-
-        }
-        .icon1{
-            width: 90px;
-            height: 90px;
-            border-radius: 50px;
-            background-color: white;
-            color:green;
-            margin-left: 20px;
-            margin-top: -30px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-        .text3{
-            padding: 20px;
-        }
-        #cont5{
-            display: flex;
-            padding: 30px;
-            gap: 30px;
-            margin-top: 100px;
-        }
-        .img2{
-            width: 500px;
-            height: 600px;
-            background-image: url(https://themewagon.github.io/solartec/img/quote.jpg);
-            background-size: cover;
-        }
-        .info{
-            width: 500px;
-        }
-        .input{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 20px;
-        }
-        input{
-            width: 250px;
-            height: 30px;
-            padding: 10px;
-        }
-    </style>
+    <!-- navbar -->
     <nav>
-        <div id="left">Solartec</div>
-        <div class="right">
-          <div class="leftdiv">
-            <div>HOME</div>
-            <div>ABOUT</div>
-            <div>SERVICE</div>
-            <div>PROJECT</div>
-            <div>PAGES</div>
-            <div>CONTACT</div>
-          </div>
-        <div class="rightdiv">
-            Get A Quete
-            <i class="fa-sharp fa-regular fa-arrow-right"></i>
+        <div class="leftnav">Logistica</div>
+        <div class="rightnav">
+            <a class="a1" href="index.html">HOME</a>
+            <a class="a2" href="about.html">ABOUT</a>
+            <a class="a2" href="service.html">SERVICES</a>
+            <a class="a2" href="page.html">PAGES</a>
+            <a class="a2" href="contact.html">CONTACT</a>
+            <div class="number">
+                <i style="color:orangered;" class="fa-solid fa-headphones"></i>
+                +012 345 6789</div>
         </div>
+        <div class="manu">
+            <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
 
+    <!-- backgroud image -->
     <div id="cont1">
-        <div class="div1">
-            <h1 style="font-size: 65px;">Pioneers Of Solar And Renewable Energy</h1>
-            <p style="font-size: 23px;">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-            <button class="btn1">Read More</button>
+        <div class="text">
+            <div class="text1">
+                <h2>Transport & Logistics Solution</h2>
+                <h1 class="head1">#1 Place For Your</h1>
+            </div>
+            <div class="text2">
+                <h1 class="head1" style="color:orangered;">Logistics</h1>
+                <h1 class="head1">Solution</h1>
+            </div>
+            <p class="prg">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
+            <div class="btn">
+                <button class="btn1">Read More</button>
+                <button class="btn2">Free Quote</button>
+            </div>
         </div>
-        <div class="div2">
-            <div class="circle1"></div>
-            <div class="circle1"></div>
-            <div class="circle2"></div>
-        </div>
-    </div>
-    <div id="cont2">
-        <div class="first">
-          <div class="text">
+        <div class="icons">
             <div class="icon">
-            <i class="fa-sharp fa-solid fa-users-medical"></i>
+                <i id="icn" class="fa-solid fa-chevron-right"></i>
+            </div> <br>
+            <div class="icon">
+                <i id="icn" class="fa-solid fa-chevron-left"></i>
             </div>
-            <h1 style="font-size: 40px;">3453</h1>
-          </div>
-            <h2>Happy Customers</h2>
-            <p style="font-size: 18px;color: grey;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
-        </div>
-        <div class="first">
-            <div style="display: flex;">
-                <div class="icon">
-                <i class="fa-sharp fa-solid fa-users-medical"></i>
-                </div>
-                <h1 style="font-size: 40px;">3453</h1>
-            </div>
-                <h2>Happy Customers</h2>
-                <p style="font-size: 18px;color: grey;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
-        </div>
-        <div class="first">
-            <div style="display: flex;">
-                <div class="icon">
-                <i class="fa-sharp fa-solid fa-users-medical"></i>
-                </div>
-                <h1 style="font-size: 40px;">3453</h1>
-            </div>
-                <h2>Happy Customers</h2>
-                <p style="font-size: 18px;color: grey;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
-        </div>
-        <div class="first">
-            <div style="display: flex;">
-                <div class="icon">
-                <i class="fa-sharp fa-solid fa-users-medical"></i>
-                </div>
-                <h1 style="font-size: 40px;">3453</h1>
-            </div>
-                <h2>Happy Customers</h2>
-                <p style="font-size: 18px;color: grey;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</p>
         </div>
     </div>
+
+    <!-- about us -->
+    <div id="cont2">
+        <div class="img1">
+            <img class="img1" src="https://themewagon.github.io/logistica/img/about.jpg" alt="">
+        </div>
+        <div class="abt">
+            <div class="box1">
+                <h3 style="color:skyblue">About Us</h3>
+                <h1 class="head2">Quick Transport and <br>Logistics Solutions</h1>
+                <p class="prg1">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            </div>
+            <div class="box2">
+                <div class="box3">
+                    <i id="icn2" class="fa-sharp fa-solid fa-globe"></i>
+                    <h3>Global Coverage</h3>
+                    <p class="prg2">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
+                </div>
+                <div class="box3">
+                    <i id="icn2" class="fa-solid fa-truck"></i>
+                    <h3>On Time Delivery</h3>
+                    <p class="prg2">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam justo.</p>
+                </div>
+            </div>
+            <button class="btn3">Explore More</button>
+        </div>
+    </div>
+
+    <!-- some fact -->
     <div id="cont3">
-        <div class="img">
+        <div class="fact">
+            <div class="box1">
+                <h3 style="color:skyblue">Some Facts</h3>
+                <h1 class="head2">#1 Place To Manage All Of Your Shipments</h1>
+                <p class="prg1">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            </div>
+            <div class="box2">
+                <div class="hdpn">
+                    <i id="icn3" class="fa-sharp fa-solid fa-headphones"></i>
+                </div>
+                <div class="text3">
+                    <h4 style="font-size: large;margin-bottom: 30px;">Call for any query!</h4>
+                    <h1 style="color:orangered;font-size: 25px;">+012 345 6789</h1>
+                </div>
+            </div>
         </div>
-        <div class="text1">
-            <h3 style="color:green;">About Us</h3>
-            <h1 style="font-size: 50px;margin-top: -10px;">25+ Years Experience In Solar & Renewable Energy Industry</h1>
-            <p style="font-size: 20px;color:grey;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-            <div class="circle3">
-                <div class="correct"></div>
-                    <h3 style="color:grey;">Diam dolor diam ipsum</h3>
+        <div class="boxs">
+            <div class="div1">
+                <i id="icn3" class="fa-solid fa-user-plus"></i>
+                <h1 style="margin-top: 0px;">1234</h1>
+                <p style="font-size: large;margin-top: -10px;">Happy Clients</p>
             </div>
-            <div class="circle3">
-                <div class="correct"></div>
-                    <h3 style="color:grey;">Diam dolor diam ipsum</h3>
+            <div class="div2">
+                <i id="icn3" class="fa-solid fa-user-plus"></i>
+                <h1 style="margin-top: 0px;">1234</h1>
+                <p style="font-size: large;margin-top: -10px;">Happy Clients</p>
             </div>
-            <div class="circle3">
-                <div class="correct"></div>
-                    <h3 style="color:grey;">Diam dolor diam ipsum</h3>
-            </div>
-            <button style="margin-top: 20px;" class="btn1">Explore More</button>
         </div>
+            <div class="div3">
+                <i id="icn3" class="fa-solid fa-user-plus"></i>
+                <h1 style="margin-top: 0px;">1234</h1>
+                <p style="font-size: large;margin-top: -10px;">Happy Clients</p>
+            </div>
     </div>
+
+    <!-- our services -->
     <div id="cont4">
-        <div class="text2">
-            <h3 style="color:green;">Our Services</h3>
-            <h1 style="font-size: 40px;">We Are Pioneers In The World Of Renewable Energy</h1>
+        <div class="text4">
+            <h3 style="color:skyblue;margin-bottom: 20px;">Our Services</h3>
+            <h1 class="head2">Explore Our Services</h1>
         </div>
-        <div class="table">
-            <div class="grid1">
-                <div class="img1">
-                </div>
-                <div class="icon1">
-                    <i style="margin:20px 0px 0px 20px;font-size: 40px;" class="fa-solid fa-solar-panel"></i>
-                </div>
-                <div class="text3">
-                <h2>Solar Panels</h2>
-                <p style="color: grey;">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <h3 style="color:green">Read More
+        <div class="grid">
+            <div class="table">
+                <img src="https://themewagon.github.io/logistica/img/service-1.jpg" alt="">
+                <h3>Air Freight</h3>
+                <p class="prg3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                <button class="btn4">
                     <i class="fa-solid fa-arrow-right"></i>
-                </h3>
+                </button>
             </div>
-            </div>
-            <div class="grid1">
-                <div class="img1"></div>
-                <!-- <img class="img1" src="https://themewagon.github.io/solartec/img/img-600x400-1.jpg" alt=""> -->
-                <div class="icon1">
-                    <i style="margin:20px 0px 0px 20px;font-size: 40px;" class="fa-solid fa-solar-panel"></i>
-                </div>
-                <div class="text3">
-                <h2>Solar Panels</h2>
-                <p style="color: grey;">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <h3 style="color:green">Read More
+            <div class="table">
+                <img src="https://themewagon.github.io/logistica/img/service-2.jpg" alt="">
+                <h3>Ocean Freight</h3>
+                <p class="prg3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                <button class="btn4">
                     <i class="fa-solid fa-arrow-right"></i>
-                </h3>
+                </button>
             </div>
-            </div>
-            <div class="grid1">
-                <div class="img1"></div>
-                <!-- <img class="img1" src="https://themewagon.github.io/solartec/img/img-600x400-1.jpg" alt=""> -->
-                <div class="icon1">
-                    <i style="margin:20px 0px 0px 20px;font-size: 40px;" class="fa-solid fa-solar-panel"></i>
-                </div>
-                <div class="text3">
-                <h2>Solar Panels</h2>
-                <p style="color: grey;">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <h3 style="color:green">Read More
+            <div class="table">
+                <img src="https://themewagon.github.io/logistica/img/service-3.jpg" alt="">
+                <h3>Road Freight</h3>
+                <p class="prg3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                <button class="btn4">
                     <i class="fa-solid fa-arrow-right"></i>
-                </h3>
+                </button>
             </div>
-            </div>
-            <div class="grid1">
-                <div class="img1"></div>
-                <!-- <img class="img1" src="https://themewagon.github.io/solartec/img/img-600x400-1.jpg" alt=""> -->
-                <div class="icon1">
-                    <i style="margin:20px 0px 0px 20px;font-size: 40px;" class="fa-solid fa-solar-panel"></i>
-                </div>
-                <div class="text3">
-                <h2>Solar Panels</h2>
-                <p style="color: grey;">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <h3 style="color:green">Read More
+            <div class="table">
+                <img src="https://themewagon.github.io/logistica/img/service-4.jpg" alt="">
+                <h3>Train Freight</h3>
+                <p class="prg3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                <button class="btn4">
                     <i class="fa-solid fa-arrow-right"></i>
-                </h3>
+                </button>
             </div>
-            </div>
-            <div class="grid1">
-                <div class="img1"></div>
-                <!-- <img class="img1" src="https://themewagon.github.io/solartec/img/img-600x400-1.jpg" alt=""> -->
-                <div class="icon1">
-                    <i style="margin:20px 0px 0px 20px;font-size: 40px;" class="fa-solid fa-solar-panel"></i>
-                </div>
-                <div class="text3">
-                <h2>Solar Panels</h2>
-                <p style="color: grey;">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <h3 style="color:green">Read More
+            <div class="table">
+                <img src="https://themewagon.github.io/logistica/img/service-5.jpg" alt="">
+                <h3>Customs Clearance</h3>
+                <p class="prg3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                <button class="btn4">
                     <i class="fa-solid fa-arrow-right"></i>
-                </h3>
+                </button>
             </div>
-            </div>
-            <div class="grid1">
-                <div class="img1"></div>
-                <!-- <img class="img1" src="https://themewagon.github.io/solartec/img/img-600x400-1.jpg" alt=""> -->
-                <div class="icon1">
-                    <i style="margin:20px 0px 0px 20px;font-size: 40px;" class="fa-solid fa-solar-panel"></i>
-                </div>
-                <div class="text3">
-                <h2>Solar Panels</h2>
-                <p style="color: grey;">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                <h3 style="color:green">Read More
+            <div class="table">
+                <img src="https://themewagon.github.io/logistica/img/service-6.jpg" alt="">
+                <h3>Warehouse Solutions</h3>
+                <p class="prg3">Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
+                <button class="btn4">
                     <i class="fa-solid fa-arrow-right"></i>
-                </h3>
-            </div>
+                </button>
             </div>
         </div>
     </div>
-    <div id="cont5">
-        <div class="img2"></div>
-        <div class="info">
-            <h3 style="color:green;">Free Quote</h3>
-            <h1 style="font-size: 50px;margin-top: -10px;">Get A Free Quote</h1>
-            <p style="font-size: 20px;color:grey;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-            <div class="input">
-            <input type="text"placeholder="your Name">
-            <input type="text"placeholder="your Email">
-            <input type="text"placeholder="your Mobile">
-            <input type="text"placeholder="Select A Service">
-            </div><br>
-            <textarea name="Special Note" id=""></textarea><br>
-            <button class="btn1">Submit</button>
+
+    <!--features-->
+    <div id="features">
+        <div id="feat">
+            <h6>Our Features</h6>
+            <h1>We Are Trusted Logistics Company Since 1990</h1>
+            <div class="feat1">
+                <i class="fa-solid fa-globe ficon"></i>
+                <h3>Worldwide Service</h3>
+                <p class="point">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+            </div>
+            <div class="feat1">
+                <i class="fa-solid fa-truck-fast ficon"></i>
+                <h3>On Time Delivery</h3>
+                <p class="point">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+            </div>
+            <div class="feat1">
+                <i class="fa-solid fa-headphones ficon"></i>
+                <h3>24/7 Telephone Support</h3>
+                <p class="point">Diam dolor ipsum sit amet eos erat ipsum lorem sed stet lorem sit clita duo justo magna erat amet</p>
+            </div>
+
+        </div>
+        <img class="fimag" src="https://themewagon.github.io/logistica/img/feature.jpg" alt="">
+    </div>
+    <!--pricing plan-->
+    <div>
+        <div class="head">
+            <h6>PRICING PLAN</h6>
+            <h1>Perfect Pricing Plan</h1>
+        </div>
+        <div id="pricing">
+            <div class="pricebox">
+                <div class="pb1">
+                     <h5>Basic Plan</h5>
+                     <h1 style="font-size: 18px;">$<span style="font-size: 50px;">49.00</span>/Month</h1>
+                </div>
+                 <br><hr><br>
+                 <div class="pb2">
+                     <p class="point"><i class="fa-solid fa-check tick"></i>HTML5 & CSS3</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Bootstrap v5</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>FontAwesome Icons</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Responsive Layout</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Cross-browser Support</p>
+                     <button class="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+             </div>
+             <div class="pricebox">
+                <div class="pb1">
+                     <h5>Standard Plan</h5>
+                     <h1 style="font-size: 18px;">$<span style="font-size: 50px;">99.00</span>/Month</h1>
+                </div>
+                 <br><hr><br>
+                 <div class="pb2">
+                     <p class="point"><i class="fa-solid fa-check tick"></i>HTML5 & CSS3</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Bootstrap v5</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>FontAwesome Icons</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Responsive Layout</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Cross-browser Support</p>
+                     <button class="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+             </div>
+             <div class="pricebox">
+                <div class="pb1">
+                     <h5>Advanced Plan</h5>
+                     <h1 style="font-size: 18px;">$<span style="font-size: 50px;">149.00</span>/Month</h1>
+                </div>
+                 <br><hr><br>
+                 <div class="pb2">
+                     <p class="point"><i class="fa-solid fa-check tick"></i>HTML5 & CSS3</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Bootstrap v5</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>FontAwesome Icons</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Responsive Layout</p>
+                     <p class="point"><i class="fa-solid fa-check tick"></i>Cross-browser Support</p>
+                     <button class="arrow"><i class="fa-solid fa-arrow-right"></i></button>
+                 </div>
+             </div>
         </div>
     </div>
+    <!--quote & form-->
+    <div id="quote">
+        <div class="get">
+            <h6>Get A Quote</h6>
+            <h1>Request A Free Qoute!</h1>
+            <p style="color: #555555; font-size: 17px; margin: 50px 50px 50px 0px;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+            <div style="display: flex; gap: 30px;">
+                <i style="background-color: #ff3e14; color: white; width: 60px; height: 60px; text-align: center; align-content: center; font-size: 30px;" class="fa-solid fa-headphones"></i>
+                <span style="font-weight: bold;">Call for any query!<br> <p style="font-size: 30px; margin-top: 10px; color: #ff3e14;">+012 345 6789</p></span>
+            </div>
+        </div>
+        
+        <form action="submit">
+            <div id="felement">
+                <input type="text" class="frm" placeholder="  Your Name">
+                <input type="text" class="frm" placeholder="  Your E-mail"><br>
+                <input type="text" class="frm" placeholder="  Your Mobile">
+                <select class="frm">
+                    <option value="Select a Freight">Select a Freight</option>
+                    <option value="Freight1">Freight1</option>
+                    <option value="Freight2">Freight2</option>
+                    <option value="Freight3">Freight3</option>
+                </select><br>
+                <textarea placeholder="Special Note" ></textarea>
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!--team members-->
+    <div id="teammember">
+        <div class="head">
+            <h6>OUR TEAM</h6>
+            <h1>Expert Team Members</h1>
+        </div>
+        <div id="team">
+            <div class="membox">
+                <div class="member">
+                    <img class="memimg" src="https://themewagon.github.io/logistica/img/team-1.jpg">
+                    <h3 class="name">Full Name</h3>
+                    <p class="designation">Designation</p>
+                    <button class="arrow"><i class="fa-solid fa-arrows-turn-right"></i></button>
+                </div>
+            </div>
+            <div class="membox">
+                <div class="member">
+                    <img class="memimg" src="https://themewagon.github.io/logistica/img/team-2.jpg">
+                    <h3 class="name">Full Name</h3>
+                    <p class="designation">Designation</p>
+                    <button class="arrow"><i class="fa-solid fa-arrows-turn-right"></i></button>
+                </div>
+            </div>
+            <div class="membox">
+                <div class="member">
+                    <img class="memimg" src="https://themewagon.github.io/logistica/img/team-3.jpg">
+                    <h3 class="name">Full Name</h3>
+                    <p class="designation">Designation</p>
+                    <button class="arrow"><i class="fa-solid fa-arrows-turn-right"></i></button>
+                </div>
+            </div>
+            <div class="membox">
+                <div class="member">
+                    <img class="memimg" src="https://themewagon.github.io/logistica/img/team-4.jpg">
+                    <h3 class="name">Full Name</h3>
+                    <p class="designation">Designation</p>
+                    <button class="arrow"><i class="fa-solid fa-arrows-turn-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Testimonial-->
+    <div class="head">
+        <h6>TESTIMONIAL</h6>
+        <h1>Our Clients Say!</h1>
+    </div>
+    <div id="testimonial">
+        <div class="test">
+            <div style="display:flex;">
+                <div>
+                    <img class="ficon" src="https://themewagon.github.io/logistica/img/testimonial-4.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Client Name</h3>
+                    <p class="point">Profession</p>    
+                </div>           
+            </div>
+            <p class="para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</p>
+        </div>
+        <div style="box-shadow: 0 0 45px rgba(0, 0, 0, .07);" class="test">
+            <div style="display:flex;">
+                <div>
+                    <img class="ficon" src="https://themewagon.github.io/logistica/img/testimonial-1.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Client Name</h3>
+                    <p class="point">Profession</p>
+                </div>
+            </div>
+            <p class="para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</p>
+        </div>
+        <div class="test">
+            <div style="display:flex;">
+                <div>
+                    <img class="ficon" src="https://themewagon.github.io/logistica/img/testimonial-2.jpg" alt="">
+                </div>
+                <div>
+                    <h3>Client Name</h3>
+                    <p class="point">Profession</p>
+                </div>
+            </div>
+            <p class="para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</p>
+        </div>
+    </div>
+<!--footer-->
+    <footer>
+        <div id="foot1">
+            <div class="f1">
+                <h2>Address</h2>
+                <p><i style="padding-right: 10px;" class="fa-solid fa-location-dot"></i>123 Street, New York, USA</p>
+                <p><i style="padding-right: 10px;" class="fa-solid fa-phone"></i>+012 345 67890</p>
+                <p><i style="padding-right: 10px;" class="fa-solid fa-envelope"></i>info@example.com</p>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-twitter"></i>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-facebook"></i>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-youtube"></i>
+                <i style="border: 1px solid white;color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; align-content: center; margin-left: 2px;" class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="f1">
+                <h2>Services</h2>
+                <a href="#">> Air Freight</a><br><br>
+                <a href="#">> Sea Freight</a><br><br>
+                <a href="#">> Road Freight</a><br><br>
+                <a href="#">> Logistic Solutions</a><br><br>
+                <a href="#">> Industry Solutions</a><br>    
+            </div>
+            <div class="f1">
+                <h2>Quick Links</h2>
+                <a href="#">> About Us</a><br><br>
+                <a href="#">> Contact Us</a><br><br>
+                <a href="#">> Our Services</a><br><br>
+                <a href="#">> Terms & Conditions</a><br><br>
+                <a href="#">> Support</a><br>
+                
+            </div>
+            <div class="f1">
+                <h2>Newspaper</h2>
+                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div id="ebox">
+                    <input id="email" type="text" placeholder="  Your email">
+                    <button id="signup"><b>SignUp</b></button>
+                </div>
+            </div>
+        </div>
+        <hr style="margin-top: 50px;">
+
+        <div id="foot2">
+        <p>© Your Site Name, All Right Reserved.</p>
+        <p>Designed By HTML Codex<br>Distributed By ThemeWagon</p>
+        </div>
+    </footer>
 </body>
 </html>
