@@ -435,6 +435,20 @@ h1{
     margin-top: 30px;
     text-align: left;
 }
+#dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+.dot1{
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ff3e41;
+    border: 5px solid white;
+}
 
 /* footer */
 footer{
@@ -647,6 +661,10 @@ p{
         grid-template-columns: repeat(1,1fr);
         padding-left: 80px;
     }
+    #dots{
+        width: 460px;
+        padding: 10px;
+    }
 
     /* footer */
     footer{
@@ -713,6 +731,8 @@ p{
 
     /* about us */
     #cont2{
+        width: 650px;
+        padding: 59px;
         display:grid;
         justify-content: center;
     }
@@ -725,6 +745,8 @@ p{
 
     /* some facts */
     #cont3{
+        width: 650px;
+        padding: 59px;
         display: grid;
         gap: 20px;
     }
@@ -746,14 +768,15 @@ p{
 
     /* our services */
     #cont4{
-        width: 100%;
+        width: 728px;
+        padding: 20px;
     }
     .grid{
         grid-template-columns: repeat(2,1fr);
         gap:30px;
     }
     .table{
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     /*our features*/
@@ -761,6 +784,9 @@ p{
         width: 768px;
         display: grid;
         gap:50px;
+    }
+    img{
+        margin-left: 20px;
     }
 
     /* get a quote */
@@ -781,6 +807,22 @@ p{
     }
     .member{
         padding: 30px;
+    }
+
+    /* testoimoanial */
+    .head{
+        width: 748px;
+        padding: 10px;
+    }
+    #testimonial{
+        width: 748px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #dots{
+        width: 748px;
+        padding: 10px;
     }
 
     /* footer */
