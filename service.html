@@ -8,6 +8,9 @@
 </head>
 <body>
     <style>
+    body{
+        margin: 0;
+    }
     #navbar{
         position:fixed; 
         width: 100%;
@@ -18,7 +21,7 @@
 /* horizontal line */
     #hrline{
         background-color: orangered;
-        height: 5px;
+        height: 15px;
     }
 /* navbar */
     nav{
@@ -195,6 +198,20 @@
         width: 90px;
         height: 90px;
     }
+    #dots{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .dot1{
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: #ff3e41;
+        border: 5px solid white;
+    }
 
     @media screen and (min-width:100px) and (max-width:480px) {
     /* navbar */
@@ -205,8 +222,9 @@
     }
     /* horizotal line */
     #hrline{
+        width: 480px;
         background-color: orangered;
-        height: 5px;
+        height: 15px;
     }   
     .rightnav{
         display: none;
@@ -247,6 +265,10 @@
     .test{
         margin: 20px;
     }
+    #dots{
+        width: 460px;
+        padding: 10px;
+    }
 
     /* footer */
     footer{
@@ -284,7 +306,7 @@
     /* horizotal line */
     #hrline{
         background-color: orangered;
-        height: 5px;
+        height: 15px;
     }   
     .rightnav{
         display: none;
@@ -318,6 +340,10 @@
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    #dots{
+        width: 748px;
+        padding: 10px;
     }
     
     /* footer */
@@ -474,6 +500,13 @@
         <p class="para">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit</p>
     </div>
 </div>
+<div id="dots">
+    <div style="background-color: white;border:5px solid #ff3e41;" class="dot1"></div>
+    <div class="dot1"></div>
+    <div class="dot1"></div>
+    <div class="dot1"></div>
+</div>
+
 
 <!--footer-->
     <footer>
