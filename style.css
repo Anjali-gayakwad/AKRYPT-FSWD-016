@@ -1,8 +1,22 @@
+#navbar{
+    position:fixed; 
+    width: 100%;
+    margin-top: -10px;
+    background-color: aliceblue;
+    position: 0;
+}
+/* horizotal line */
+#hrline{
+    background-color: orangered;
+    height: 10px;
+}
+
 /* navbar */
 nav{
     display: flex;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* background-color: #fff; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .leftnav{
     background-color: orangered;
@@ -27,11 +41,13 @@ nav{
     display: flex;
     gap: 15px;
     margin-left: 20px;
-    font-size: larger;
+    font-size: 25px;
+    font-weight: bolder;
 }
 .manu{
     display:none;
 }
+
 /* background image */
 #cont1{
     display: flex;
@@ -75,6 +91,7 @@ h2{
     color: white;
     border: none;
     font-size: medium;
+    cursor: pointer;
 }
 .btn2{
     width: 180px;
@@ -83,6 +100,7 @@ h2{
     color: white;
     border: none;
     font-size: medium;
+    cursor: pointer;
 }
 .icons{
     padding: 150px 0px;
@@ -98,6 +116,7 @@ h2{
     margin: 15px 18px;
     font-size: larger;
 }
+
 /* about us */
 #cont2{
     display: flex;
@@ -151,6 +170,7 @@ h3{
     border: none;
     margin-top: 30px;
 }
+
 /* some facts */
 #cont3{
     display:flex;
@@ -198,6 +218,7 @@ h3{
     background-color: green;
     color:white;
 }
+
 /* our services */
 #cont4{
     margin: 200px 0px;
@@ -209,6 +230,7 @@ h3{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    justify-content: center;
 }
 .table{
     width: 300px;
@@ -233,6 +255,7 @@ img{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
 /*our features*/
 #features{
     display: flex;
@@ -259,6 +282,7 @@ img{
     width: 90px;
     height: 90px;
 }
+
 /* pricing plan */
 #pricing{
     display: flex;
@@ -292,11 +316,11 @@ h5{
     font-size: 17px;
     margin-top: -10px;
 }
+
 /* get a quote */
 #quote{
     display: flex;
     justify-content: center;
-    position: relative;
     margin-top: 200px;
 }
 .get{
@@ -340,10 +364,11 @@ textarea{
     font-size: 16px;
     font-weight: bolder;
 }
+
 /* our team */
 .head{
     text-align: center;
-    position: relative;
+    /* position: relative; */
     margin-top: 170px;
 }
 h6{
@@ -392,6 +417,7 @@ h1{
     font-size: 20px;
     margin-top: 10px;
 }
+
 /* testoimoanial */
 #testimonial{
     display: flex;
@@ -403,19 +429,19 @@ h1{
     height: 200px;
     padding: 20px;
 }
-
 .para{
     color: #555555;
     font-size: 17px;
     margin-top: 30px;
     text-align: left;
 }
+
 /* footer */
 footer{
     width: vw;
     height: 450px;
     background-color: black;
-    position: relative;
+    /* position: relative; */
     margin-top: 170px;
 }
 #foot1{
@@ -466,9 +492,17 @@ p{
 }
 
 @media screen and (min-width:100px) and (max-width:480px) {
-    nav{
+    /* navbar */
+    #navbar{
         width: 480px;
-    }    
+        position:fixed;
+        background-color: white;
+    }
+    /* horizotal line */
+    #hrline{
+        background-color: orangered;
+        height: 5px;
+    }   
     .rightnav{
         display: none;
     }
@@ -476,10 +510,12 @@ p{
         display: block;
         padding: 30px;
     }
+
+    /* background image */
     #cont1{
         width: 470px;
         gap:10px;
-        padding: 30px 0px 0px 10px;
+        padding: 70px 0px 0px 10px;
     }
     .text{
         width: 320px;
@@ -499,6 +535,8 @@ p{
     .icons{
         padding-right: 10px;
     }
+
+    /* about us */
     #cont2{
         width: 100%;
         display: grid;
@@ -510,6 +548,8 @@ p{
     .abt{
         width:480px;
     }
+
+    /* some facts */
     #cont3{
         width: 100%;
         display: grid;
@@ -532,9 +572,13 @@ p{
         width: 200px;
         margin:0px 0px 0px 120px;
     }
+
+    /* our services */
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
+
+    /*our features*/
     #features{
         width: 480px;
         display: grid;
@@ -549,6 +593,8 @@ p{
         height: 500px;
         padding: 10px;
     }
+
+    /* pricing plan */
     #pricing{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -556,6 +602,8 @@ p{
     .pricebox{
        margin-left: 50px;
     }
+
+    /* get a quote */
     #quote{
         width: 440px;
         display: grid;
@@ -580,6 +628,8 @@ p{
     #submit{
         width: 380px;
     }
+
+    /* our team */
     #teammember{
         display: grid;
         margin-top: 200px;
@@ -590,13 +640,17 @@ p{
         gap: 30px;
         padding-left: 50px;
     }
+
+    /* testoimoanial */
     #testimonial{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         padding-left: 80px;
     }
+
+    /* footer */
     footer{
-        width: 100%;
+        width: 480px;
         height: 1200px;
     }
     #foot1{
@@ -621,9 +675,17 @@ p{
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {
-    nav{
-        width: 768px;
-    }  
+    /* navbar */
+    #navbar{
+        position:fixed;
+        background-color: white;
+    } 
+    /* horizotal line */
+     #hrline{
+        background-color: orangered;
+        height: 5px;position: fixed;
+    }
+  
     .rightnav{
         display:none;
     }  
@@ -631,6 +693,8 @@ p{
         display:block;
         padding: 30px;
     }
+
+    /* background image */
     #cont1{
         width: 710px;
         gap:30px;
@@ -646,6 +710,8 @@ p{
         font-size: 25px;
         margin-top: 10px;
     }
+
+    /* about us */
     #cont2{
         display:grid;
         justify-content: center;
@@ -656,6 +722,8 @@ p{
     .box3{
         width: 300px;
     }
+
+    /* some facts */
     #cont3{
         display: grid;
         gap: 20px;
@@ -675,14 +743,70 @@ p{
         gap: 50px;
         margin: 0px 0px 0px 220px;
     }
+
+    /* our services */
     #cont4{
         width: 100%;
+    }
+    .grid{
         grid-template-columns: repeat(2,1fr);
+        gap:30px;
     }
     .table{
         margin-left: 20px;
     }
-    
+
+    /*our features*/
+    #features{
+        width: 768px;
+        display: grid;
+        gap:50px;
+    }
+
+    /* get a quote */
+    #quote{
+        display: grid;
+    }
+    form{
+        width: 550px;
+        height: 500px;
+    }
+
+    /* our team */
+    #team{
+        width: 700px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 50px;
+    }
+    .member{
+        padding: 30px;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 1200px;
+    }
+    #foot1{
+        display: grid;
+        justify-content: left;
+        padding: 30px 0px 0px 20px;
+    }
+    hr{
+        margin-top: 10px;
+    }
+    #foot2{
+        display: flex;
+        justify-content: space-between;
+        /* text-align: center; */
+    }
+    #ebox{
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+        padding: 10px 10px 0px 10px;
+    }   
 }
 
 
